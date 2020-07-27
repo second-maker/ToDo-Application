@@ -1,0 +1,253 @@
+/* reset ================================ */
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 100%;
+    font-family: 'Hiragino Sans', sans-serif;
+    line-height: 1.7;
+    letter-spacing: 1px;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #f6faff;
+    color: #6c7686;
+  }
+  
+  ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+    color: #2d3133;
+    font-size: 14px;
+  }
+  
+  a:hover {
+    transition: all 0.3s ease;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+  
+  h1 {
+    font-weight: 600;
+ }
+
+ body {
+  background: #dce7f6;
+ }
+
+/* ココからtop.ejs ========================================== */
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.head-title {
+  padding-top: 50px;
+}
+
+header h1 {
+  font-family: fantasy;
+  font-size: 60px;
+}
+
+
+.top-icon {
+  padding: 30px 0 20px 0;
+}
+
+
+.description {
+  padding-bottom: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+
+.index-button {
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid #9ec34b;
+  font-size: 16px;
+  color: #9ec34b;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+.index-button:hover {
+  background-color: #9ec34b;
+  border-color: #cbe585;
+  color: #FFF;
+}
+
+
+
+.top-button {
+  margin-left: 56px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 56px;
+  display: inline;
+  color: #6c7686;
+}
+
+.top-button:hover {
+  color: #9ec34b;
+}
+
+
+/* ココからmain.ejs ========================================= */
+
+
+.top-link {
+  padding: 20px 0;
+}
+
+.new-button {
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid #9ec34b;
+  font-size: 16px;
+  color: #9ec34b;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+.new-button:hover {
+  background-color: #9ec34b;
+  border-color: #cbe585;
+  color: #FFF;
+}
+
+.main-table-body {
+  padding: 30px 0;
+}
+
+.main-table-body li {
+  font-size: 20px;
+  border: 2px solid #617081;
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.list-data {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.list-menu form {
+  position: relative;
+  right: 35px;
+}
+
+
+.list-menu form input {
+  display: inline-block;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background:#0C88CA;
+	border-bottom:4px solid #005691;
+	border-radius: 4px;
+	transition: .0s;
+}
+
+.list-menu form input:hover {
+  cursor: pointer;
+	 text-decoration: none;
+	 background:#005691;
+	 transform: translate3d(0, 4px, 0);
+	 transition: .0s;
+	 border-bottom: none;
+}
+
+
+
+
+
+/* ココからnew.ejs ========================================= */
+
+
+.container-header h1 {
+  font-family: serif;
+  font-size: 40px;
+  padding: 20px 0;
+}
+
+.list-form-wrapper {
+  padding: 30px 0;
+}
+
+.form-label {
+  position: relative;
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.list-form-wrapper input[type="text"] {
+  height: 40px;
+  width: 200px;
+  background: #dce7f6;
+  padding: 20px;
+  font-size: 100%
+  
+}
+
+.list-form-wrapper input[type="submit"] {
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid #9ec34b;
+  font-size: 16px;
+  color: #9ec34b;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+.list-form-wrapper input[type="submit"]:hover {
+  background-color: #9ec34b;
+  border-color: #cbe585;
+  color: #FFF;
+}
+
+.list-form-wrapper input[type="text"],input[type="submit"] {
+  position: relative;
+  left: 40px;
+}
+
+.cancel-button {
+  margin-top: 10px;
+  margin-left: 2px;
+  font-weight: 600;
+  text-decoration: underline;
+  display: inline-block;
+}

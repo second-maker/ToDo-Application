@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo APP</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container top-link">
+          <a href="/" class="top-button">ToDo Application</a>
+        </div>
+    </header>
+    <div class="container main-contents">
+        <div class="container-header">
+            <h1>ToDoList</h1>
+            <a href="/new" class="new-button">+ 新規作成</a>
+        </div>
+        <ul class="main-table-body">
+            <% lists.forEach((list) => { %>
+                <li>
+                    <div class="list-data">
+                        <span class="name-column"><%= list.name %></span>
+                    </div>
+                    <div class="list-menu">
+                        <form action="/delete/<%=list.id%>" method="post">
+                            <input type="submit" value="削除">
+                        </form> 
+                    </div>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+
+</body>
+</html>
